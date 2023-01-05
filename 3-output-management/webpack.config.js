@@ -13,10 +13,6 @@ module.exports = {
     clean: true,
   },
   plugins: [
-    // new HtmlWebpackPlugin({
-    //   template: "./src/index.html",
-    //   filename: "index.html",
-    // }),
     new HtmlWebpackPlugin({
       title: 'Output Management',
     }),
