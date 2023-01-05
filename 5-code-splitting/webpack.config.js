@@ -4,14 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    index: {
-      import: "./src/index.js",
-      dependOn: "shared",
-    },
-    another: {
-      import: "./src/another-module.js",
-      dependOn: "shared",
-    },
+    index: "./src/index.js",
     shared: "lodash",
   },
   output: {
@@ -24,9 +17,4 @@ module.exports = {
       filename: "index.html",
     }),
   ],
-  optimization: {
-    splitChunks: {
-      chunks: "all",
-    },
-  },
 };
